@@ -24,8 +24,8 @@ contract DeployCounter is BaseDeployer {
 
         counterSalt = bytes32(_counterSalt);
 
-        deployForks[0] = Chains.ArbitrumSepolia;
-        deployForks[1] = Chains.BaseSepolia;
+        deployForks[0] = Chains.kaia;
+        deployForks[1] = Chains.kairos;
 
         createDeployMultichain(deployForks);
     }
@@ -69,10 +69,10 @@ contract DeployCounter is BaseDeployer {
     }   
 
     function getChainName(Chains chain) internal pure returns (string memory) {
-        if (chain == Chains.ArbitrumSepolia) {
-            return "Arbitrum Sepolia";
-        } else if (chain == Chains.BaseSepolia) {
-            return "Base Sepolia";
+        if (chain == Chains.kaia) {
+            return "Kaia chain";
+        } else if (chain == Chains.kairos) {
+            return "Kairos chain";
         } else {
             return "Unknown Chain";
         }

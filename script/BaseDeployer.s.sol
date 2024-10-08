@@ -12,8 +12,8 @@ contract BaseDeployer is Script {
     address internal ownerAddress;
 
     enum Chains {
-        ArbitrumSepolia,
-        BaseSepolia
+        kairos,
+        kaia
     }
 
     enum Cycle {
@@ -52,10 +52,10 @@ contract BaseDeployer is Script {
     }
 
     constructor() {
-        // Testnet
+        // kaia $ kairos chain
 
-        forks[Chains.ArbitrumSepolia] = "https://arb-sepolia.g.alchemy.com/v2/xnlSKnxCN-p1DO4ZJSOlohxxxnPYPwpT";
-        forks[Chains.BaseSepolia] = "https://base-sepolia.g.alchemy.com/v2/xnlSKnxCN-p1DO4ZJSOlohxxxnPYPwpT";
+        forks[Chains.kaia] = "https://public-en.node.kaia.io";
+        forks[Chains.kairos] = "https://public-en.kairos.node.kaia.io";
     }
 
     function createFork(Chains chain) public {
