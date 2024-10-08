@@ -8,14 +8,11 @@ gas_reports_ignore = ["Counter2"]
 
 [rpc_endpoints]
 
-arbitrumSepolia = "${ARBITRUM_SEPOLIA_RPC_URL}"
-baseSepolia = "${BASE_SEPOLIA_RPC_URL}"
+kaia = "${KAIA_RPC_URL}"
+kairos = "${KAIROS_RPC_URL}"
 
 
 [etherscan]
-arbitrumgoerli = { key = "${ARBITRUMSCAN_API_KEY}", chain = "arbitrum-goerli" }
-optimismgoerli = { key = "${OPTIMISMSCAN_API_KEY}", chain = "optimism-goerli" }
 
-arbitrumSepolia = { key = "${ARBITRUMSCAN_API_KEY}", chain = "arbitrum-sepolia" }
-base-sepolia = { key = "${BASESCAN_API_KEY}", chain = "base-sepolia" }
+
 sepolia = { key = "${ETHERSCAN_API_KEY}", chain = "sepolia" }
