@@ -42,12 +42,12 @@ This will deploy the Counter contract to both the Kaia and Kairos testnets using
 You can also manually deploy the Counter contract to specific networks. Here are the example commands for testnet and mainnet deployments:
 Testnet
 ```
-forge create --rpc-url https://public-en.kairos.node.kaia.io  src/Counter.sol:Counter --constructor-args 5
+forge create --rpc-url https://public-en.kairos.node.kaia.io --SIGNER  src/Counter.sol:Counter --constructor-args 5
 ```
 
 Mainnet
 ```
-forge create --rpc-url https://public-en.node.kaia.io src/Counter.sol:Counter --constructor-args 5
+forge create --rpc-url https://public-en.node.kaia.io --SIGNER src/Counter.sol:Counter --constructor-args 5
 ```
 
 ## License
